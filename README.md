@@ -1,2 +1,4 @@
 # Java-Script-Tasks-1
- SOme functions created using HTML and JavaScript
+ Some functions created using HTML and JavaScript
+Largest Number
+![Largest Number](https://github.com/Het2804/Java-Script-Tasks-1/assets/142522726/29d240e7-0b8f-45a0-89ce-9f30f978f889)
