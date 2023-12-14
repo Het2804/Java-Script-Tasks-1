@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find The Largest Among Three Numbers</title>
+    <link rel="stylesheet" href="style.css">
+   
+</head>
+<body>
+
+    <h2>Find The Largest Among Three Numbers</h2>
+
+    <label for="a">Enter First number: </label>
+    <input type="number" id="a"><br><br>
+
+    <label for="b">Enter Second number: </label>
+    <input type="number" id="b"><br><br>
+
+    <label for="c">Enter Third number: </label>
+    <input type="number" id="c"><br><br>
+
+    <button onclick="largestnumber()">Find largest</button><br>
+
+    <p id="result">The Larget Number is</p>
+
+    <script>
+        function largestnumber() {
+           
+            var a =  document.getElementById('a').value;
+            var b =  document.getElementById('b').value;
+            var c =  document.getElementById('c').value;
+          
+            if (isNaN(a) || isNaN(b) || isNaN(c)) {
+                alert("Please enter valid numbers");
+                return;
+            } else{
+                var result = Math.max(a, b, c);
+                document.getElementById('result').innerHTML = "The Larget Number is " +  result + '.';
+            }
+        }
+    </script>
+</body>
+</html>

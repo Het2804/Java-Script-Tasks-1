@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Number Sign Checker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1 >Number Sign Checker</h1>
+
+  <label for="square"><b>Enter a Number:</b></label>
+  <input type="text" id="a" >
+
+  <button onclick="sign()">Check</button><br>
+
+ <b> <h4 id="result"></h4></b>
+
+  <script>
+  
+    function sign() {
+      var a = document.getElementById('a').value;
+    
+  if (isNaN(a)) {
+    document.getElementById("result").innerHTML='Please enter valid number.'
+  }
+  else{
+    if (a>0) {
+        document.getElementById("result").innerHTML='The Number ' + a + ' is Positive.'
+    }
+    else if(a<0){
+        document.getElementById("result").innerHTML='The Number ' + a + ' is Negative.'
+    }
+    else {
+        document.getElementById("result").innerHTML='The Number ' + a + ' is Zero.'
+    }
+  }
+    }
+  </script>
+</body>
+</html>
